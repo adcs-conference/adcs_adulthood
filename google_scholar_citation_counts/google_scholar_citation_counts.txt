@@ -1,0 +1,190 @@
+Supporting user task based conversations via e-mail.	3
+The Methodology of Manual Assessment in the Evaluation of Link Discovery	2
+Using formal concept analysis for document retrieval	2
+WriteProc: A Framework for Exploring Collaborative Writing Processes	9
+Improving rankings in small-scale web search using click-implied descriptions	7
+MetaView: Dynamic metadata based views of user files	0
+Evaluating the Effectiveness of Visual Summaries for Web Search	0
+Extricating Meaning from Wikimedia Article Archives	1
+Harvesting Domain-Specific Terms using Wikipedia	0
+Enterprise PeopleFinder: combining evidence from Web pages and corporate data	15
+Studying the Evolution of XML Document Structures.	0
+Information Extraction in the KELP Framework.	0
+The Nexus information hub for exploring social-informational context.	0
+Id-Dynamic Views on Static and Dynamic Disassembly Listings	0
+A Rulebased Approach for Automatic Identification of Publication Types of Medical Papers	3
+The Use of Topic Representative Words in Text Categorization	0
+Interaction differences in web search and browse logs	2
+Foundations for personalised documents: a scrutable user model server	7
+Boolean Classifieds Manifold	0
+Tutor: support for scrutably personalised documents	2
+Anonymous folksonomies for small enterprise webs: a case study	0
+Facilitating biomedical systematic reviews using text classification and ranked retrieval	0
+A Meta-Analysis of the Effects of Search Experience on Search Performance in Terms of the Recall Measure in Controlled IR User Experiments	0
+Interestingness Measures for Multi-Level Association Rules	1
+Liquid Mir{\`o}: An Application Framework for Semantic Document Softlinking	0
+Web Indexing on a Diet: Template Removal with the Sandwich Algorithm	0
+Exploring the benefit of contextual information for boosting TREC Genomic IR performance	0
+An analysis of lyrics questions on Yahoo! Answers: Implications for lyric/music retrieval systems	1
+Seeing the forest from trees: Blog retrieval by aggregating post similarity scores	1
+Syntactic and semantic structure in web search queries	0
+Using Collaboratively Constructed Document Collections to Simulate Real-World Object Comparisons	0
+Towards a System to Improve Administrative Processes for Front-Line Academic Staff.	1
+IR evaluation using multiple assessors per topic	6
+Searching for Perfection.	0
+Modelling disagreement between judges for information retrieval system evaluation	1
+Automatic Categorization of Announcements on the ASX.	0
+Efficient accumulator initialisation	3
+XML-Based Offline Website Generation.	1
+Efficient sorting of search results by string attributes	1
+Confidence intervals for information retrieval evaluation	1
+InexBib-Retrieving XML elements based on external evidence	2
+Perspectives on content managment, portals, standards, development methods.	0
+Parameter sensitivity in rank-biased precision	3
+The usefulness of web spam	0
+Focused Crawling in Depression Portal Search: A Feasibility Study.	7
+Fast search engine vocabulary lookup	1
+Document Classification with Recommendation Architecture: Extensions for Feature Intensity Recognition and Column Labeling.	0
+Term Clustering based on Lengths and Co-occurrences of Terms	0
+Novel Group Awareness Mechanisms for Real-Time Collaborative Document Authoring.	1
+Essential Drug Informatics	0
+Collection selection via lexicon inspection	29
+Mobile applications of focused link discovery	0
+TML: A thesaural markup language	9
+Improved use of Contextual Information in Cross-language Information Retrieval.	1
+Automatic thread classification for Linux user forum information access	13
+Score standardization for robust comparison of retrieval systems	2
+Evaluation of indexing methods for clustering	3
+An English-translated parallel corpus for the CJK Wikipedia collections	2
+Composition and decomposition of Japanese katakana and kanji morphemes for decision rule induction from patent documents	1
+Collaborative filtering recommender systems based on popular tags	11
+Exploiting medical hierarchies for concept-based information retrieval	2
+Rule-based approach for identifying assertions in clinical free-text data	1
+A Parallel Document Retrieval Server For The World Wide Web	1
+Finding tacit knowledge in online communities	3
+File system wide file classification with agents	3
+Six degrees of cohesion in patent citation network	0
+Document modelling for customised information delivery	4
+Querying and analysing document collections with Formal Concept Analysis	6
+In search of reliable retrieval experiments	10
+Visual Displays for Browsing RDF Documents.	6
+Recovering Structure from Unstructured Web-accessible Classified Advertisements	0
+XML Document Retrieval with PADRE.	3
+A practical approach to the generation of on-line help	4
+Machine mapping of document collections: the leximancer system	39
+Graph-based concept weighting for medical information retrieval	2
+Analysis of the effect of negation on information retrieval of medical data	2
+An ontology-based mining approach for user search intent discovery	0
+Evaluating the effectiveness of visual summaries for web search	2
+Vector Space Ranking: Can We Keep it Simple	12
+Biomedical named entity recognition system	5
+Co-Training on Textual Documents with a Single Natural Feature Set.	7
+A study in language identification	1
+On the distribution of user persistence for rank-biased precision	3
+Extending the capabilities of retrieval systems by a two level representation of content	9
+MyNewsWave: User-centered Web search and news delivery.	4
+The Interplay of Information Retrieval and Query by Singing with Words	0
+How to Write a Document in Controlled Natural Language.	5
+Feature selection and weighting methods in sentiment analysis	23
+A metadata collection technique for documents in WinFS	1
+Applying a generic conceptual workflow modeling technique to document workflows	8
+Generating and Comparing Models within an Ontology.	2
+Phrases and Feature Selection in E-Mail Classification.	18
+Relationship between the nature of the search task types and query reformulation behaviour	1
+Context-aware internet access	2
+Text retrieval for medical discharge summaries using SNOMED and formal concept analysis	4
+Intelligent filtering using nonmonotonic inference	8
+Workflow Based Just-in-time Training.	5
+Visualisation of Document and Concept Spaces.	1
+Source code authorship attribution using n-grams	5
+You are what you post: User-level features in threaded discourse	5
+A framework for measuring the impact of web spam	4
+Relatively relevant: Assessor shift in document judgements	4
+Element retrieval using a passage retrieval approach	12
+Readability of French as a foreign language and its uses	9
+Dynamic content presentation	2
+Information retrieval in documents using semantic criteria	0
+E-mail classification by decision forests	3
+Case-based retrieval of highly structured cases using Text Representation and Retrieval	2
+GOOD Publishing System: Generic Online/Offline Delivery.	2
+Transformation-based learning for automatic translation from HTML to XML	13
+Predicting fame and fortune: Pagerank or indegree	41
+An attempt to measure the quality of questions in question time of the Australian Federal Parliament	1
+Automatic Document Creation from Software Specifications	7
+Examining the pseudo-standard web search engine results page	5
+Models and metrics: IR evaluation as a user process	1
+Merging Prolog and XML databases	3
+Using natural language generation techniques to produce virtual documents	7
+Querying linguistic annotations	6
+Hybrid bitvector index compression	11
+Usability experiments for determining document-related awareness in real-time cooperative editing	8
+An ontology derived from heterogeneous sustainability indicator set documents	1
+Document expansion versus query expansion for ad-hoc retrieval	24
+Can requests-for-action and commitments-to-act be reliably identified in email messages	5
+Preliminary investigations into ontologybased collection selection	2
+Meeting log analysis and synchronous, dynamic document derivation in computer-supported meetings	2
+Putting the public into public health information dissemination: social media and health-related web pages	1
+External evaluation of topic models	13
+A Framework for Complex Tokenisation and its Application to Newspaper Text	9
+Comparing scanning behaviour in web search on small and large screens	1
+Personalisation for a Just-In-Time Organisational Training System	0
+Text retrieval using formal concept analysis and snomed	3
+Recommending geocaches	2
+Language independent ranked retrieval with NeWT	3
+The use of argumentation to assist in the generation of legal documents	7
+Sentence length bias in TREC novelty track judgements	1
+Conflation-based comparison of stemming algorithms	41
+Reuse of information through virtual documents	23
+Tensor query expansion: a cognitively motivated relevance model	4
+A knowledge base for structured documents	2
+Querying image ontology	2
+The effect of using pitch and duration for symbolic music retrieval	4
+Applying formal concept analysis to semantic file systems leveraging wordnet	4
+Reordering an index to speed query processing without loss of effectiveness	1
+Automatic identification of English and Indonesian parallel documents	1
+Implementing Shared Document Preparation with Lightweight Editing	3
+A Testbed for Indonesian Text Retrieval.	12
+Indexing without spam	3
+Prospects for formal concept analysis in document retrieval	3
+Efficient indexing algorithms for approximate pattern matching in text	1
+LivePAGE-A multimedia database system to support World-Wide Web development	2
+Towards a New Approach to Tightly Coupled Document Collaboration.	1
+Supporting the answering process	6
+Designing a social portal	2
+Managing Literature References with Topic Maps.	2
+Effects of spam removal on search engine efficiency and effectiveness	1
+WebKnox: Web Knowledge Extraction	8
+Collection-Independent Document-Centric Impacts.	6
+Optimal Structure Weighted Retrieval.	1
+On the relevance of documents for semantic representation	8
+A Multi-Learner Approach to E-mail Classification	0
+A comparison of evaluation measures given how users perform on search tasks	4
+A structured ontology and information retrieval engine for email search and Discovery 	4
+An Automatic Question Generation Tool for Supporting Sourcing and Integration in Students’ Essays 	0
+Analyzing web multimedia query reformulation behavior 	7
+Buying bestsellers online: A case study in Search \& Searchability. 	6
+Demonstration of collaborative internet-based document development using microsoft tools 	0
+Do users find looking at text more useful than visual representations? a comparison of three search result interfaces 	1
+Does brandname influence perceived search result quality? Yahoo!, Google, and WebKumara 	12
+Estimating System Effectiveness Scores With Incomplete evidence 	0
+Evaluating an ontology with OntoClean 	2
+Ex-ray: text classification and the assessment of mental health 	0
+Explaining difficulty navigating a website using page view data 	3
+Finding additional semantic entity information for search engines 	1
+Is CORI Effective for Collection Selection? An Exploration of Parameters, Queries, and Data. 	21
+Is the unigram relevance model term independent?: classifying term dependencies in query expansion 	3
+Is this document relevant? Errr it’ll do 	8
+Keyword association network: a statistical multi-term indexing approach for document categorization 	0
+Multi-aspect group formation using facility location analysis 	0
+On the Effectiveness of Relevance Profiling. 	3
+Pairwise similarity of TopSig document signatures 	0
+Positive, negative, or mixed? Mining blogs for opinions 	3
+Quo vadis information retrieval research 	0
+Random Indexing K-tree 	6
+Searching the World Wide Web Made Easy? The Cognitive Load Imposed by Query Refinement Mechanisms 	44
+Structured Ontology and IR for Email Search \& Discovery 	2
+The impact of users’ cognitive style on their navigational behaviors in web searching 	2
+Tibianna: A Learning-Based Search Engine with Query Refinement. 	4
+User-mediated word shape tokens for querying document images 	1
+Using the MatchDetectReveal system for comparative analysis of texts 	5
+Personal Information Management: Stuff Ive Seen and Beyond 	0

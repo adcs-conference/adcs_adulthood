@@ -1,0 +1,219 @@
+﻿The University of Sydney
+
+Proceedings
+
+Third Australian Document Computing
+
+Symposium
+
+TECHNICAL REPORT 518
+
+20 August 1998
+
+Editors
+
+Judy Kay
+
+Basser Department of Computer Science
+
+University of Sydney
+
+and
+
+Maria Milosavljevic
+
+Mathematical and Information Services
+
+BASSER DEPARTMENT OF COMPUTER SCIENCE
+
+University of Sydney
+
+NSW 2006
+
+TM AUSTRALIA
+
+PDF Editor
+
+-----------------------------------------------------Page 1-----------------------------------------------------
+﻿
+Message from the Programme Chairs
+
+Welcome to the ADCS'98, the third Australian Document Computing Symposium. The ADCS series of symposia provide an opportunity for researchers and practitioners in document management and information retrieval to meet and present their work. The symposium aims to cover all aspects of Document Computing - issues ranging from the fundamentals of document architectures and standards for markup, through storage, management, retrieval, authentication and workflow, to active and virtual documents.
+
+This symposium follows the two previous symposia held in Melbourne. We have slightly altered the format of the symposium to include demonstration sessions as       as full and short papers.
+
+All papers submitted for this symposium were submitted as complete papers and these were reviewed by three reviewers. The final programme has nine full papers, three short papers and three demonstrations.
+
+We wish to thank the reviewers who worked to a tight schedule in reviewing the papers, giving both an assessment of each paper and helpful feedback to the authors. They are Peter           Queensland University of Technology, Stephen Green, Macquarie University, John Shepherd, University of New South Wales,       Thistlewaite, Australian National University, Wilson Wen, Telstra Research Labs, Ross Wilkinson, Mathematical and Information Sciences and Justin         Royal Melbourne Institute of Technology.
+
+Our thanks to our Organising Committee, Nick Carr, Linda         and Nghi Cao Systems, who ensured that many details of running the symposium were managed smoothly.
+
+Programme Chairs,
+
+Judy Kay, University of Sydney
+
+Maria Milosavljevic, CSIRO Mathematical and Information Sciences.
+
+TM
+
+PDF Editor
+
+-----------------------------------------------------Page 2-----------------------------------------------------
+﻿
+Proceedings
+
+Third Australian Document Computing Symposium
+
+Friday 21st August 1998
+
+University of Sydney, Sydney, Australia
+
+CONTENTS
+
+Papers                                                                   Page
+
+Kosmynin
+
+A Proximity Measure for Ranked Text Retrieval                            1
+
+Michael Fuller and Justin Zobel
+
+Conflation-based Comparison of Stemming Algorithms                    8
+
+Mingfang Wu and Ross Wilkinson
+
+Evaluation of Indexing Methods for Clustering                            14
+
+Robert Dale, Stephen J. Green, Maria Milosavljevic, Cecile Paris, Cornelia
+
+Verspoor and Sandra Williams
+
+Using Natural Language Generation Techniques to Produce
+
+Virtual Documents                                                      20
+
+Cecile Paris, Keith         Linden and Shijian Lu
+
+Automatic Document Creation from Software Specifications              26
+
+Alan F. Smeaton          O'Connor
+
+User-Mediated Word Shape Tokens for Querying Document
+
+Images                                                                  32
+
+Short    Papers
+
+Vincent H. Guerrini, Robert M.         and Luciano J.
+
+Essential Drug Informatics                                                40
+
+Paul Martin
+
+Scholarly Web Sites: A General Method of Structuring Online
+
+Research Notebooks                                                   44
+
+Bruce Mills, S. Venkatesh, M. Kumar and L. Narasimhan
+
+Information Retrieval in Documents Using Semantic Criteria             47
+
+Demonstrations
+
+Gene Golovchinsky, Bill N. Schilit and Morgan N. Price
+
+XLibris Document Appliance                                              54
+
+Mao Lin Huang, Peter Eades and Vladimir Estivill-Castro
+
+JavaMiner: Non-linear Visual TM Browsing of Huge Java
+
+Documents for Program Understanding and Software
+
+Mining                                                                 55
+
+PDF Editor
+
+-----------------------------------------------------Page 3-----------------------------------------------------
+﻿
+Page
+
+James Uther and       Taylor
+
+Horses for Courses: Fusing Dynamic and Static Web Sites               56
+
+Rhys Francis, Ross Gibbs, Leon Harari, Justine
+
+Brendan Hills, Nick Leask, Ainslie Sefton, Andrew Waugh and Ross Wilkinson
+
+Electronic Archiving - a 100 Year Experiment                            59
+
+Simon Dennis, Roberty McArthur and Peter Bruza
+
+Searching the World Wide Web Made Easy? The Cognitive
+
+Load Imposed by Query Refinement Mechanisms                     65
+
+Gitesh K. Raikundalia
+
+Meeting Log Analysis and Synchronous, Dynamic Document
+
+Derivation in Computer-supported Meetings                              72
+
+TM
+
+PDF Editor
+
+-----------------------------------------------------Page 4-----------------------------------------------------
+﻿
+A Proximity Measure for Ranked Text Retrieval
+
+Arkadi Kosmynin
+
+Research Data Network Co-operative Research Centre &
+
+CSIRO Mathematical and Information Sciences 723 Swanston St, Carlton, Vic 3053 Australia
+
+A rkadi.Kosmynin @          csiro. au
+
+information is one of the ways to improve
+
+Abstract
+
+In this paper we introduce a simple heuristic measure that gives higher scores to the documents where query terms co-occur in close proximity. This measure is aimed to increase performance of text retrieval by distinguishing dense regions of matching from a few matches scattered across a document. The ability to do this is important for large collections where document sizes vary significantly. We briefly discuss a few other techniques that make use of proximity information,    then introduce our method and present results of its evaluation. This evaluation shows that the method gives a considerable advantage in comparison with the cosine similarity measure.    We also have conducted additional experiments to prove that it works well in a combination with an automatic relevance feedback method.
+
+performance of text retrieval systems on real life collections and therefore it is a promising direction of research.
+
+A long document may contain many terms from the query under consideration. These terms may be randomly distributed in the document or they may be concentrated in a few paragraphs. In the first case the document is most likely irrelevant to the query. In the second case it is most likely relevant or, at least, a part of it is, and a good algorithm should distinguish these cases. There is strong evidence obtained experimentally that long documents may not be regarded as homogeneous objects [3].
+
+There are working methods, like phrase search      5, 6, 7] and passage retrieval [8, 9, 10], utilizing the proximity information. These methods are widely used in commercial systems
+
+12] and research prototypes [13,      15,
+
+The disadvantage of most of these methods is that they are largely boolean. That means that
+
+Keywords retrieval.
+
+Document databases, information
+
+there is no continual numeric value for the proximity component of the score.     is either "yes" if the terms appear close enough in the document, or "no" if they do not. This makes it
+
+1    Introduction
+
+Ranked text retrieval methods (1] have received wide recognition in commercial and research systems. As the focus in information retrieval shifted from experiments with small collections of documents titles, abstracts and relatively short news articles to experiments with very large collections      of documents of various sizes, the need to take proximity into consideration became
+
+TM
+
+Proceedings of the Third A u s t r a l i a n Document Computing Symposium, Sydney, A u s t r a l i a , August 2 1 , 1998.
+
+hard to use these            for ranked text retrieval.
+
+Phrase search is a method that allows to identify phrases and use them for indexing and search. 'The objective of phrase indexing is to identify groups of words that will enhance retrieval effectiveness when assigned as phrase descriptors to representations of documents and queries" [5]. Phrases can be identified using statistical    or    syntactic    methods.    Syntactic
+
+more    apparent.    Use    of    terms    proximity
+
+PDF Editor
+
+-----------------------------------------------------Page 5-----------------------------------------------------
+﻿Thank you for evaluating Wondershare PDF Editor Pro for Mac. You can only convert 5 pages of each file with the trial version. To get all the pages converted, you need to purchase the software from: http://cbs.wondershare.com/go.php?pid=973&vid=3.1.0&m=db
+

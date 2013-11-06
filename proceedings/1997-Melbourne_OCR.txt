@@ -1,0 +1,435 @@
+﻿Analyzing Image Content for a Large Scale
+
+Hypermedia System
+
+John H. Boose, Larry S.        Randy J.
+
+The Boeing Company,         PO Box         Seattle, WA
+
+john@redwood.rt.cs.boeing.com , lbaum@redwood.rt.cs.boeing.com , rkelley@redwood.rt.cs.boeing.com Boeing's Intelligent Graphics team also includes Mike Carter, Susan Chew, Chuck Gebhardt, Brent Hadley,
+
+Ed Hall, Tom Jenkins, Cathy        Steve Pruitt, and Dave
+
+TM
+
+PDF Editor
+
+Abstract
+
+The Boeing Company maintains tens of millions of pages of information associated with the manufacture and delivery of its products. Much of this information must be made available electronically.     We have developed tools to automatically convert and integrate electronic data into industry standard formats. Some of the technical challenges include I) handling a wide variety of source formats, 2) making sure that the tools scale up to handle millions of pages of information, and 3) adding functionality to graphics. Our system contains       four million pages of text including tens of thousands of graphics.
+
+In this paper we describe tools that recognize and use information within airplane-related vector and raster images. Such images include troubleshooting charts, fault reporting diagrams, component location diagrams, component index tables, wiring diagrams, system schematics, parts illustrations, standards tables, and structural and tooling drawings.     Each airplane requires conversion of over 20,000 graphics including over    900,000    pieces     of    cross-referenced information.     We are also exploring visual information    retrieval    strategies,     including content-based and similarity-based methods for both vector and raster graphics.
+
+Keywords: information retrieval, hypermedia
+
+1 Four Million Pages and Growing
+
+The Boeing Company is committed to Air Transport Association Specification 2100 (ATA, 1995) which requires the use of the Standard Generalized Markup Language (SGML)                   To comply with these specifications Boeing has converted millions of document pages to SGML. Document sources include commercial tools (e.g., Microsoft Word, InterLeaf,
+
+Proceedings of the Second Australian Document Computing Symposium,            Australia, April
+
+internal proprietary tools, and data from
+
+external vendors.
+
+Manually converting such documents would be prohibitively expensive and error-prone. To meet this challenge our team built a series of text autotaggers that automatically convert documents into SGML. From       to the present we developed autotaggers to create a testbed hypermedia system containing data from over four million pages.    We use Electronic Book Technologies' DynaText system as the browser, including custom extensions for viewing graphics. We will report our text autotagging methods and results elsewhere.
+
+2 Graphic Navigation and Functionality
+
+The autotaggers receive text in various formats. They receive graphics in vector formats (usually CGM) and raster formats (usually TIFF) and originally did little more than pass the graphics to viewers in DynaText. The graphics lacked information for navigation and retrieval. Users often needed to examine many images to find the right one, including multiple panning and zooming operations.     Hyperlinking from a text reference in a graphic was not possible, nor was full text search. Graphics lack the basic functionality of the SGML text.    The graphics        lacked useful functional information ~ What is the logic in this troubleshooting diagram? What are the relationships between items in this table? What lines in this wiring diagram represent continuous circuits?
+
+We built a series of graphic recognition tools that use vector and raster graphics to produce navigational and functional information represented in SGML. We then integrated this information into the testbed.
+
+3 Graphics Recognition Tools
+
+We used a similar approach for each graphic recognition problem:
+
+• Develop a tool to reason about vector or raster
+
+graphics.
+
+• Tune and evaluate the      for accuracy and the
+
+ability to scale up.
+
+-----------------------------------------------------Page 1-----------------------------------------------------
+﻿
+• Integrate acquired graphic information with text
+
+in the testbed.
+
+• Evaluate the usability of the results.
+
+• Transfer the results to products and services.
+
+The image counts given below are for a recent Boeing 747 airplane maintenance manual set. They illustrate the large scale of the problems.
+
+Troubleshooting charts are vector drawings that provide mechanics with decision trees for fault
+
+isolation. One drawing can consist of as many as 30 individual sheets with intersheet connections linked by references. Our software analyzes the layout of the boxes and the arrows connecting them and builds an internal representation of the decision tree. It then generates hot spots so that users can easily navigate within a sheet and among sheets as well as follow links to other information. This manual set contains over 750 charts containing over 16,000 hot spots.
+
+contains over 650 vector component location diagrams;    the system produced over 3200 subpictures containing over 25,000 hot spots.
+
+Component index tables are vector drawings that tell the mechanic where to go to find the maintenance procedures for the equipment illustrated in the component location drawings. The index table recognizer determines the individual table cells and relationships among cell contents. It generates over 14,000 hot spots in over 300 tables linking the drawings to component location diagrams, other
+
+This manual set contains over 1300 system schematics with over 461,000 hot spots.
+
+Parts illustrations are raster images that provide exploded views of the airplane much like component location diagrams. They contain callouts and item numbers that must be linked to other pages. Because they are raster images we must perform more complex analysis than with the vector images. We have developed routines to quickly process callouts and item numbers with high accuracy. This manual set contains over 13,000 sheets with more than
+
+|    ECAS            PANELIOVHD PANEL W H O PANEL!               OVHD PANEL
+
+CODE/
+
+component index tables and to maintenance procedures (Figure 2).
+
+hot spots (Figure 5).
+
+Standards tables contain information about
+
+PANEL]
+
+8
+
+DECK
+
+FWD CABIN
+
+CABIN AFT CABIN
+
+01 02 03 04
+
+Wiring diagrams are vector drawings extracted from computer-aided design data sets.     The intelligent graphics software analyzes both the vector image and the data set to determine how wires are
+
+Boeing engineering practices. The sources for many of these tables are paper copies that were several generations old, made with typewriters and ruled with ball point pens. The conversion team scanned
+
+DID FLT
+
+laid out in the drawings so that circuit tracing is
+
+these images for on-line use and was planning to
+
+OFF LGT
+
+NO
+
+CONTROL
+
+TEMP
+
+FLT DECK
+
+WAS?
+
+DECK TRIM
+
+OPERATE
+
+NOT APPLY
+
+SHEET
+
+00
+
+enabled in the hypermedia viewer. In addition, there are hot spots providing hyperlinks to equipment lists and wire lists as well as other diagrams. This manual set contains over 1400 diagrams with over 135,000
+
+manually re-enter the information. We developed recognition software to extract the logic in the tables. Together with a commercial optical character recognition package we automatically converted
+
+NO
+
+AFT C A P ILIUM
+
+ALL HUM
+
+FAILED TO MOVE
+
+YES
+
+ft
+
+NO
+
+SCA
+
+to 09     .
+
+21 00 13 00
+
+60 03 01
+
+21      0401 21      0501
+
+hot spots (Figures
+
+System Schematics are similar in functionality and recognition requirements to wiring diagrams.
+
+over 6600 tables to InterLeaf format (Figures 6, 7). Later these will also be converted to SGML.
+
+FLT DECK FAILED
+
+DESIRED
+
+FAILED
+
+o
+
+YES KG
+
+0601
+
+TO                     TEMP
+
+NO CONTROL WITH
+
+BO 10 60 08
+
+1400 60 11
+
+YES
+
+f.
+
+NOT
+
+21
+
+11R15
+
+ran
+
+TRIM AIR
+
+ZONE TEMP CONT MAN FLT
+
+ZONE TEMP CONT VLV CLOSE FWD
+
+CLOSE MID
+
+E        CONT      CLOSE AFT
+
+11R16
+
+11R26
+
+D
+
+DK
+
+ZONE              FWD ZONE        OVHT
+
+AFT
+
+AIR DISTRIBUTION AND TEMPERATURE CONTROL (SHEET 1) - FAULT CODES
+
+ALL
+
+AIR CONDITIONING
+
+4
+
+FEB 10/8S
+
+Figure     The fault diagram recognizer finds arrows, diamonds, and other information, then uses
+
+knowledge about diagram layout to produce the application's flow of logic.
+
+Fault reporting diagrams are vector images that pilots use to determine what messages to record in the flight logbook when a malfunction occurs. The variations in layout are more complex than the
+
+one diagram consists of multiple sheets, each of which has one or more subpictures (insets) with internal callout references.    Our software must reliably subdivide each image into subpictures and
+
+6
+
+troubleshooting charts; still we've been able to generate the hot spots that link the callouts to the accurately determine the decision networks in these correct subpicture, including references to other diagrams and generate over 20,000 hot spots in over sheets. In addition, the software generates hot spots 1,600 diagrams (Figure 1). around each equipment number, so that mechanics Component location diagrams provide exploded can easily navigate from the picture to information views of aircraft and their components. Typically about that piece of equipment.    This manual set
+
+Location
+
+4)       |
+
+Figure 2. The component location recognizer uses page layout logic to
+
+induce groups and attach callouts.
+
+TM
+
+PDF Editor
+
+-----------------------------------------------------Page 2-----------------------------------------------------
+﻿
+Figure 5. A raster parts illustration recognizer finds callouts and reference numbers,
+
+using symbol finding and optical character recognition.
+
+Metal         rati
+
+Trad*
+ Group
+
+Color
+
+Primary
+ Secondary
+
+Figure 3. A wiring diagram recognizer finds connected circuits and links references together.
+
+or
+
+Color
+
+Color
+
+NOB*
+
+Yellow
+
+Equipment
+
+Part Number:
+
+Part Description: POWER Vendor Number:
+
+Pink
+
+Quantity: 0000
+
+-
+
+Yellow
+
+None
+
+Station: 440 WL: 150
+
+R
+
+Figure 4. Users follow hotlinks to retrieve equipment information. The system stores wiring diagram links and other references in the DynaText database.
+
+Figure 6. This original standards table was made using a typewriter and ball-point pen.
+
+Figure 7. After scanning the table in Figure 6, the table recognizer automatically finds cells,
+
+performs character recognition, then produces standard mark-up files.
+
+TM
+
+PDF Editor
+
+-----------------------------------------------------Page 3-----------------------------------------------------
+﻿
+4 Evaluating Recognition Results
+
+To evaluate the results of text tagging our team used commercial SGML verifiers and specialized custom systems. We developed tools that analyze the text output for consistency and completeness, including statistical measures and link verification.    Often these tools find authoring errors as well as tagging errors.
+
+It is more difficult to build such tools to check graphic recognition accuracy. We built a custom graphic analysis tool that simultaneously shows recognized objects and the corresponding SGML (Figure 8). For example, if the recognizer finds a
+
+£lle
+
+reference, the viewer displays the hot spot along with the information as to what type of reference it is and to what it refers. Using this viewer we manually sampled thousands of images to assess recognition accuracy. Recognition accuracy ranged from about 97% for component location graphics to 99.9% for troubleshooting charts. These results exceeded our performance goals.
+
+We can also find some types of graphics authoring errors. For example we can automatically detect incorrect references that point to non-existent locations. Previously, such errors could only be found by manual inspection.
+
+Tool
+
+5 Future Challenges - Work in Progress
+
+We are currently working with Boeing's library of millions of structural and tooling raster drawings. These drawings have been scanned from aperture cards and placed on-line.    We would like to recognize objects such as title blocks, part numbers, dimension lines, materials lists, and parts tables. Much of the text is hand written and many of the scanned images are skewed or noisy.    This is challenging work (Figure 9).
+
+We are also working on visual information retrieval strategies, including content-based and similarity-based methods (Figure 10).
+
+6 Summary
+
+We have successfully added functionality to tens of thousands of vector and raster graphics, integrating
+
+them with text in on-line navigation systems, addressing the problems of scale and accuracy. We hope to continue to add functionality to graphics to enhance the overall utility of Boeing's digital data.
+
+References
+
+ATA    (1995).    Air    Transport    Association Specification 2100 - Digital Data Standards for Aircraft Support, 1995, Order code A090
+
+Goldfarb, Charles F. (1990). The SGML Handbook, Oxford University Press, ISBN 0-19-853737-9
+
+,
+
+Text             final
+
+Une 6086                                                6174 T.
+
+7073 6874 7000                                         6 Une S61S S766 S673         S672 5984 S63S               6<
+
+Une        6247 5351                               S3S1
+
+0 97     0;
+
+Text S560        final "BODY GEAR WHEEL
+
+0 69 64 0;
+
+Text             final "LH.
+
+Text 5161 5593 final "ALTERNATE DOOR":
+
+5337 final
+
+final
+
+SGML
+
+»
+
+j
+
+hld-"HS3"»" <HOTSPOT»
+
+fflB30NH3K6
+
+Figure 8. We assess recognition accuracy using our custom graphics analysis tool.
+
+10
+
+Figure 9. The structural and tooling drawing recognizer must find part numbers, title
+
+blocks, and dimensions lines in raster images.
+
+11
+
+-----------------------------------------------------Page 4-----------------------------------------------------
+﻿
+A Multi-party Document Model
+
+Seng-cho     T.
+
+D e p a r t m e n t of I n f o r m a t i o n M a n a g e m e n t
+
+N a t i o n a l T a i w a n University
+
+Taipei, Taiwan,
+
+Figure      Our visual search engine finds similar vector images in a database of over
+
+6,000 drawings for oneFault Isolation Manual.
+
+TM
+
+PDF Editor
+
+Abstract
+
+A multi-party document (MPD) is one that con- tains multiple parts intended for multiple recipients in that each recipient does not necessarily need to know the existence, and therefore the corresponding content, of the other parts of the document intended for other recipients. MPDs pose new requirements, namely, transparency and security, to the under- lying system.     This paper reviews the traditional document models and their shortcomings with re- spect to the stated requirements and proposes a new model that satisfies those requirements.    The ma- jor implementation issues including document con- struction and encryption for MPD supports are also discussed. Shifting these capabilities to the system level will relieve burdens of users and enhance the security measure of the system for protecting the integrity and privacy of document contents. The is- sues discussed in this paper are important for mak- ing a sound underlying support system for the de- velopment of information systems, in particular in the Intranets environment.
+
+Keywords    Document management, document structure, security, encryption, Intranets.
+
+1    Introduction
+
+Traditionally, a document such as an electronic mail, an HTML document on the Internet or the like is to be treated as one to be read by one or more people as one whole document.    From the security standpoint, the traditional encryption systems such as the Public Key system [1, 2] or the Private Key system [3] that encrypts and decrypts a document at the sender and receiver ends respectively work well for these documents.    We refer to these documents as single-party documents (SPD) to reflect the fact that the whole document is addressed to one single-party at a time, disregarding whether there are multiple recipients for the document or not. A multi-party document (MPD), in contrast, is one, which contains multiple
+
+Proceedings of the Second Australian Docu- ment Computing Symposium, Melbourne, Aus- tralia, April 5, 1997.
+
+13
+
+parts intended for multiple recipients in that each recipient does not necessarily need to know the existence, and therefore the corresponding content, of the other parts of the document intended for other recipients.
+
+Multi-party documents find many applications in our daily life.    For example, a grade sheet is an MPD in that the grades contained in such a document for the whole class of students are the parts intended for each of the students in the class. Each student can read his/her own grades but not the others'.    In other words, it is desirable that the privacy of a student's grades is observed re- gardless of how the grade sheet is to be received, either being delivered to the students or accessed by students on an on-demand fashion. Similarly, a classified project planning document might con- tain parts covering status and assignments for each team member, who does not need to know the ex- istence of any other team members. The protec- tion of this document from being misused by team members or outsiders has profound security im- plications. In particular in an environment where document-based workflow is common and essential such as the work group environment [4, 5] promoted by the current popular Web [6] and Internet, or Intranets [7], technology, the appropriate support for multi-party documents will have a tremendous impact on the success of the ultimate systems. MPDs therefore pose new requirements to the underlying system. The two major requirements are: First, the security measure of an MPD should not be compromised; neither an MPD be accessed nor handled by an unnecessary third party. Sec- ondly, for document manipulation purpose, the il- lusion that an MPD be a single document should be supported; artificial boundaries imposed on an MPD is not desirable.
+
+This paper reviews the traditional document models and their shortcomings with respect to the requirements stated above and then proposes a new model that satisfies those requirements in Section 2 and 3 respectively. We will also highlight the implementation considerations of such an environment that supports MPDs in Section 4 before the conclusion is drawn in Section 5.
+
+-----------------------------------------------------Page 5-----------------------------------------------------
+﻿Thank you for evaluating Wondershare PDF Editor Pro for Mac. You can only convert 5 pages of each file with the trial version. To get all the pages converted, you need to purchase the software from: http://cbs.wondershare.com/go.php?pid=973&vid=3.1.0&m=db
+

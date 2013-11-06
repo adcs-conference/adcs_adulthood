@@ -1,0 +1,50 @@
+ADCS 2006 Proceedings of the Eleventh Australasian Document Computing Symposium,
+11 December 2006
+Edited by Peter Bruza, Amanda Spink and Ross Wilkinson
+
+i
+
+
+Proceedings of the Eleventh Australasian Document Computing Symposium, held at the Queensland University of Technology 11 December 2006. Published by the Faculty of Information Technology, Queensland University of Technology, Australia. Editors: Peter Bruza Amanda Spink Ross Wilkinson ISBN 0-XXXXXXX-X-X www.adcs06.fit.qut.edu.au/
+
+ii
+
+
+ADCS 2006
+The Eleventh Australasian Document Computing Symposium
+Brisbane, Australia 11 December 2006
+
+Chairs' Preface
+These proceedings contain the papers of the Eleventh Australasian Document Computing Symposium hosted by, and held within, the Faculty of Information Technology at the Queensland University of Technology. The keynote address, twelve papers and two posters reflect the breadth and interest of the Australian research community in the area of document computing. The twelve papers here were selected from seventeen submissions. Every paper had three peer reviews. Submitted papers were anonymously reviewed at their full length by experts in the area. Dual submissions were explicitly prohibited. The members of the program committee and the extra reviewers deserve special thanks for their contribution to ADCS2005. The symposium includes many formal presentations, but perhaps its greatest benefit lies in the opportunity it provides for document computing practitioners to get together informally and to share ideas and enthusiasm. Peter Bruza Amanda Spink Ross Wilkinson
+
+iii
+
+
+Symposium Chair
+Peter Bruza Queensland University of Technology
+
+Program Co-chairs
+Amanda Spink Ross Wilkinson Queensland University of Technology CSIRO
+
+Program Committee
+Vo Ahn Peter Bailey Wray Buntine Lawrence Cavedon Robert Dale Peter Eklund Tomas Gedeon Schlomo Geva Baden Hughes Judy Kay Mun Kew Leong Chris Lueg Rob McArthur Gitesh K. Raikundalia Andrew Trotman Andrew Turpin Anne-Marie Vercoustre University of Melbourne CSIRO University of Helsinki RMIT University Macquarie University University of Wollongong Australian National University Queensland University of Technology The University of Melbourne University of Sydney Institute for Infocomm Research University of Tasmania CSIRO Victoria University University of Otago RMIT University INRIA, France
+
+ADCS Advisory Committee
+Peter Bruza David Hawking Judy Kay Alistair Moffat Ross Wilkinson Justin Zobel Queensland University of Technology CSIRO University of Sydney The University of Melbourne CSIRO RMIT University
+
+iv
+
+
+Contents
+Keynote Address
+Robert Dale (Macquarie University)
+
+Papers (Fully Refereed)
+Some Observations on User Search Behavior Yuye Zhang and Alistair Moffat (University of Melbourne) Examining the Pseudo-Standard Web Search Engine Results Page Andrew Turpin, (Royal Melbourne Institute of Technology), Bobo Billerbeck (SENSIS Pty Ltd), Larry A. Abel (Royal Melbourne Institute of Technology) and Falk Scholer (University of Melbourne) Improving Rankings in Small-Scale Web Search Using Click Implied Descriptions David Hawking, Tom Rowlands and Matt Adcock (CSIRO) My Instant Expert George Ferizis and Peter Bailey (CSIRO) Preliminary Investigations into Ontology-Based Collection Selection John D. King, Y. Li, Peter D. Bruza and R. Nayak (Queensland University of Technology) Document Related Awareness Elements in Synchronous Collaborative Authoring Gitesh Raikudalia and Hao Lan Zhang (Victoria University) A Sequence Based Recommender System (for Learning Resources) Dean Cummins, Kalina Yacef and Irena Koprinska (University of Sydney) Information Access Efficiency: A Measure and Case Study Shijian Lu and Cecile Paris (CSIRO) The Performance of Query Formation Interfaces for XML Retrieval Alan Woodley, Shlomo Geva and Sylvia Lauretta Edwards (Queensland University of Technology) InexBib ­ Retrieving XML Elements Based on External Evidence Alexander H Krumpholz and David Hawking (CSIRO) Element Retrieval Using a Passage Retrieval Approach Weihua Huang, Andrew Trotman and Richard O'Keefe (University of Otago) Differentiating Document Type and Author Personality for Linguistic Features Scott Nowson (Macquarie University) and Jon Oberlander (Edinburgh University)
+
+Posters (Refereed)
+Dual Interactive information Retrieval Vitaliy Vitsentiy (Queensland University of Technology) Enhanced Web-Based Translation Extraction for English-Chinese CLIR Chengye Lu, Yue Xu and Shlomo Geva (Queensland University of Technology)
+
+v
+
+
