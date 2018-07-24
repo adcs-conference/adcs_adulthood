@@ -1,0 +1,20 @@
+Topics  & Keywords\\
+Theme 1&search,user,queri,task,perform,reformul\\ 
+Theme 2&document,databas,structur,virtual,manag,exist\\ 
+Theme 3&retriev,passag,element,xml,relev,inex\\ 
+Theme 4&user,tag,recommend,profil,approach,base\\ 
+Theme 5&inform,retriev,data,access,public,health\\ 
+Theme 6&queri,click,similar,retriev,descript,rank\\ 
+Theme 7&translat,extract,mlu,languag,approach,inform\\ 
+Theme 8&awar,author,collabor,mechan,group,provid\\ 
+Theme 9&model,term,associ,expans,depend,relev\\ 
+Theme 10&watermark,bit,imag,rate,inform,domain\\ 
+Theme 11&system,score,evalu,measur,review,filter\\ 
+Theme 12&index,order,collect,effect,retriev,search\\ 
+Theme 13&tabl,process,text,approach,reus,paper\\ 
+Theme 14&style,user,navig,cognit,search,inform\\ 
+Theme 15&workflow,document,model,process,appli,conceptu\\ 
+Theme 17&screen,search,result,small,scan,behaviour\\ 
+Theme 18&word,document,text,wst,categor,segment\\ 
+Theme 19&web,search,spam,engin,page,result\\ 
+Theme 20&relev,assessor,judgement,document,topic,evalu\\ 
